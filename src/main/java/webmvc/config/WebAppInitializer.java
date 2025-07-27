@@ -6,12 +6,12 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] { AppConfig.class };  // сервисы, бины, Thymeleaf
+        return new Class[] { AppConfig.class }; 
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] { WebConfig.class };  // Spring MVC конфиг
+        return new Class[] { WebConfig.class };
     }
 
     @Override
